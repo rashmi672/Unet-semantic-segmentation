@@ -5,7 +5,7 @@ Segmentation is useful and can be used in real-world applications such as medica
 
 U-Net is a semantic segmentation technique originally proposed for medical imaging segmentation. It’s one of the earlier deep learning segmentation models, and the U-Net architecture is also used in many GAN variants such as the Pix2Pix generator. 
 
-U-Net was introduced in the paper, [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597). The model architecture is simple: an encoder for downsampling and a decoder for upsampling with skip connections. As **Figure 1** shows, it shapes like the letter U hence the name U-Net.
+U-Net was introduced in the paper, [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597). The model architecture is simple: an encoder for downsampling and a decoder for upsampling with skip connections. As below **Figure** shows, it shapes like the letter U hence the name U-Net.
 
 ![](Images/1_unet_architecture_paper-768x427.webp)
 
