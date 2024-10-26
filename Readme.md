@@ -26,13 +26,14 @@ The segmentation masks in the Penn-Fudan Pedestrian dataset are grayscale images
 But while writing the dataset preparation code, we will replace all pixels other than 0 with 255. This will make the mask of each person entirely white and the rest of the code will also become simpler.
 
 ![](Images/penn-fundan-pedestiran-samples-to-train-unet-from-scratch.png)
-*Figure 2. Penn-Fudan Pedestrian images and masks*
+*Figure 2. Penn-Fudan Pedestrian images and masks.*
 
 ### Training UNet from Scratch Project Directory Structure ###
 **Directory Structure Tree**
 
-![](Images/Directory structure.jpg)
+![Directory Tree](Images/Directory_structure.jpg)
 *Figure 3. Project directory structure*
+
 ### Analyzing the Graphs ###
 The following are the loss, accuracy, and mean IoU graphs.
 ![](codes/outputs/inference_results/accuracy.png)
