@@ -31,7 +31,7 @@ But while writing the dataset preparation code, we will replace all pixels other
 ### Training UNet from Scratch Project Directory Structure ###
 **Directory Structure Tree**
 
-![](<Images/Directory structure.jpg>)
+![](Images/Directory structure.jpg)
 *Figure 3. Project directory structure*
 ### Analyzing the Graphs ###
 The following are the loss, accuracy, and mean IoU graphs.
