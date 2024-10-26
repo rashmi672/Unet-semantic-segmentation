@@ -7,9 +7,8 @@ U-Net is a semantic segmentation technique originally proposed for medical imagi
 
 U-Net was introduced in the paper, [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597). The model architecture is simple: an encoder for downsampling and a decoder for upsampling with skip connections. As **Figure 1** shows, it shapes like the letter U hence the name U-Net.
 
-![Unet Model Architecture](Images/1_unet_architecture_paper-768x427.webp)
-*Figure 1. Unet Model Architecture*
-
+![](Images/1_unet_architecture_paper-768x427.webp)
+*Figure 1. Unet Model Architectre*
 ## Dataset
 We are using 2 datasets for training this model. One is Penn-Fudan Pedestrain dataset and Berkeley Segmentation Dataset 500 (BSDS500). 
 
