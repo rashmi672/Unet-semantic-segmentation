@@ -54,14 +54,17 @@ But while writing the dataset preparation code, we will replace all pixels other
     ├── model.py
     ├── train.py
     └── utils.py 
-    
+
 ### Analyzing the Graphs ###
 The following are the loss, accuracy, and mean IoU graphs.
-![Figure 3. Accuracy graphs after training on the Penn-Fudan dataset.](codes/outputs/inference_results/accuracy.png)
+![Accuracy graphs after training on the Penn-Fudan dataset.](codes/outputs/inference_results/accuracy.png)
+Figure 3. Accuracy graphs after training on the Penn-Fudan dataset.
 
-![Figure 4. Mean IoU graphs after training on the Penn-Fudan Pedestrian segmentation dataset.](codes/outputs/inference_results/miou.png)
+![Mean IoU graphs after training on the Penn-Fudan Pedestrian segmentation dataset.](codes/outputs/inference_results/miou.png)
+Figure 4. Mean IoU graphs after training on the Penn-Fudan Pedestrian segmentation dataset.
 
-![Figure 5. Loss graphs after training the UNet model from scratch.](codes/outputs/inference_results/loss.png)
+![Loss graphs after training the UNet model from scratch](codes/outputs/inference_results/loss.png)
+Figure 5. Loss graphs after training the UNet model from scratch.
 
 Here we can observe that the plots for the validation accuracy and mean IoU also follow a similar trend. They both almost keep on improving till the end.
 
@@ -75,4 +78,4 @@ We can see that the model performs well but not very well obviously. In some cas
 
 It looks like, the model may need even more training with data augmentation and then it will be able to perform well. Also, we had only 146 samples for training. Having more training instances will surely help the model.
 
-**THANKS A LOT!!**
+**THANKS YOU!!**
