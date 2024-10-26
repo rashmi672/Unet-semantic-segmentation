@@ -28,23 +28,24 @@ But while writing the dataset preparation code, we will replace all pixels other
 ![Figure 2. Penn-Fudan Pedestrian images and masks.](Images/penn-fundan-pedestiran-samples-to-train-unet-from-scratch.png)
 
 ### Training UNet from Scratch Project Directory Structure ###
+
 ├── input
 │   └── PennFudanPed
 │       ├── train_images
 │       ├── train_masks
 │       ├── valid_images
 │       └── valid_masks
-|    └── BSDS
+│   └── BSDS  // Additional dataset for training/evaluation
 │       ├── train_images
 │       ├── train_masks
 │       ├── valid_images
 │       └── valid_masks
-├── outputs
-│   ├── valid_preds 
+├── outputs  // Results and visualizations
+│   ├── valid_preds  // Predictions on validation set
 │   ├── accuracy.png
 │   ├── loss.png
-│   ├── miou.png
-└── src
+│   └── miou.png
+└── src  // Source code directory
     ├── config.py
     ├── datasets.py
     ├── engine.py
@@ -52,8 +53,8 @@ But while writing the dataset preparation code, we will replace all pixels other
     ├── metrics.py
     ├── model.py
     ├── train.py
-    └── utils.py
-
+    └── utils.py 
+    
 ### Analyzing the Graphs ###
 The following are the loss, accuracy, and mean IoU graphs.
 ![Figure 3. Accuracy graphs after training on the Penn-Fudan dataset.](codes/outputs/inference_results/accuracy.png)
