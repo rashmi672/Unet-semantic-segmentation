@@ -16,16 +16,18 @@ We are using 2 datasets for training this model. One is Penn-Fudan Pedestrain da
 
 The original dataset can be found on the official [Penn-Fudan Database](https://www.kaggle.com/datasets/sovitrath/penn-fudan-pedestrian-dataset-for-segmentation) for Pedestrian Detection and Segmentation website.
 
-But we do not need the bounding box information for this project. So, I prepared a different version of the Penn-Fudan dataset only for semantic segmentation with proper training/validation split.
+But we do not need the bounding box information for this project. So, I prepared a different version of the Penn-Fudan dataset only for semantic segmentation with proper training/validation split. 
 
-**The Penn-Fudan Pedestrian Segmentation Masks**
+2. BSDS500: The [BSDS](https://www.kaggle.com/datasets/balraj98/berkeley-segmentation-dataset-500-bsds500) dataset consists of 500 natural images, ground-truth human annotations and benchmarking code. The data is explicitly separated into disjoint train, validation and test subsets. The dataset is an extension of the BSDS300, where the original 300 images are used for training / validation and 200 fresh images, together with human annotations, are added for testing. Each image was segmented by five different subjects on average. 
+
+### The Penn-Fudan Pedestrian Segmentation Masks ###
 The segmentation masks in the Penn-Fudan Pedestrian dataset are grayscale images. In each mask, the background has a pixel value of 0. While each person is indicated by an incrementing pixel value. This means if there are two persons, the instance of the first person has a pixel value of 1 and the second person has a pixel value of 2.
 
 But while writing the dataset preparation code, we will replace all pixels other than 0 with 255. This will make the mask of each person entirely white and the rest of the code will also become simpler.
 
 ![Figure 2. Penn-Fudan Pedestrian images and masks.](Images/penn-fundan-pedestiran-samples-to-train-unet-from-scratch.png)
 
-**Training UNet from Scratch Project Directory Structure**
+### Training UNet from Scratch Project Directory Structure ###
 ├── input
 │   └── PennFudanPed
 │       ├── train_images
@@ -52,7 +54,7 @@ But while writing the dataset preparation code, we will replace all pixels other
     ├── train.py
     └── utils.py
 
-**Analyzing the Graphs**
+### Analyzing the Graphs ###
 The following are the loss, accuracy, and mean IoU graphs.
 ![Figure 3. Accuracy graphs after training on the Penn-Fudan dataset.](codes/outputs/inference_results/accuracy.png)
 
@@ -62,7 +64,7 @@ The following are the loss, accuracy, and mean IoU graphs.
 
 Here we can observe that the plots for the validation accuracy and mean IoU also follow a similar trend. They both almost keep on improving till the end.
 
-**Inference using the Trained UNet Model**
+### Inference using the Trained UNet Model ##
 We can run inference on images in a directory using the inference_image.py script. All the results will be saved inside the outputs/inference_results directory.
 
 Here are a few results where the model performed well, if not the best.
