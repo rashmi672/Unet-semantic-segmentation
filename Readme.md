@@ -51,7 +51,7 @@ We can run inference on images in a directory using the inference_image.py scrip
 
 Here are a few results where the model performed well, if not the best.
 ![](Images/image.png)
-*Figure 6. Good inference results after training the UNet model using PyTorch on the Penn-Fudan Pedestrian segmentation dataset.*
+*Figure 7. Good inference results after training the UNet model using PyTorch on the Penn-Fudan Pedestrian segmentation dataset.*
 
 We can see that the model performs well but not very well obviously. In some cases, it is able to differentiate between a person and a handbag, while in some other cases, it isn’t. For sure, there is scope for improvement.
 
