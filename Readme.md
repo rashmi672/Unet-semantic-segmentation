@@ -7,7 +7,7 @@ U-Net is a semantic segmentation technique originally proposed for medical imagi
 
 U-Net was introduced in the paper, [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597). The model architecture is simple: an encoder for downsampling and a decoder for upsampling with skip connections. As **Figure 1** shows, it shapes like the letter U hence the name U-Net.
 
-![](Images/1_unet_architecture_paper-768x427.webp, "width=500")
+![](Images/1_unet_architecture_paper-768x427.webp)
 *Figure 1. Unet Model Architectre*
 ## Dataset
 We are using 2 datasets for training this model. One is Penn-Fudan Pedestrain dataset and Berkeley Segmentation Dataset 500 (BSDS500). 
@@ -25,7 +25,7 @@ The segmentation masks in the Penn-Fudan Pedestrian dataset are grayscale images
 
 But while writing the dataset preparation code, we will replace all pixels other than 0 with 255. This will make the mask of each person entirely white and the rest of the code will also become simpler.
 
-![](Images/penn-fundan-pedestiran-samples-to-train-unet-from-scratch.png, "width=500")
+![](Images/penn-fundan-pedestiran-samples-to-train-unet-from-scratch.png)
 *Figure 2. Penn-Fudan Pedestrian images and masks.*
 
 ### Training UNet from Scratch Project Directory Structure ###
@@ -35,13 +35,13 @@ But while writing the dataset preparation code, we will replace all pixels other
 *Figure 3. Project directory structure*
 ### Analyzing the Graphs ###
 The following are the loss, accuracy, and mean IoU graphs.
-![](codes/outputs/inference_results/accuracy.png, "width=500")
+![](codes/outputs/inference_results/accuracy.png)
 *Figure 4. Accuracy graphs after training on the Penn-Fudan dataset.*
 
-![](codes/outputs/inference_results/miou.png, "width=500")
+![](codes/outputs/inference_results/miou.png)
 *Figure 5. Mean IoU graphs after training on the Penn-Fudan Pedestrian segmentation dataset.*
 
-![](codes/outputs/inference_results/loss.png, "width=500")
+![](codes/outputs/inference_results/loss.png)
 *Figure 6. Loss graphs after training the UNet model from scratch*
 
 Here we can observe that the plots for the validation accuracy and mean IoU also follow a similar trend. They both almost keep on improving till the end.
