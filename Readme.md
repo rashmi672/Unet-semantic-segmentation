@@ -28,43 +28,20 @@ But while writing the dataset preparation code, we will replace all pixels other
 ![Figure 2. Penn-Fudan Pedestrian images and masks.](Images/penn-fundan-pedestiran-samples-to-train-unet-from-scratch.png)
 
 ### Training UNet from Scratch Project Directory Structure ###
+**Directory Structure Tree**
 
-├── input
-│   └── PennFudanPed
-│       ├── train_images
-│       ├── train_masks
-│       ├── valid_images
-│       └── valid_masks
-│   └── BSDS  // Additional dataset for training/evaluation
-│       ├── train_images
-│       ├── train_masks
-│       ├── valid_images
-│       └── valid_masks
-├── outputs  // Results and visualizations
-│   ├── valid_preds  // Predictions on validation set
-│   ├── accuracy.png
-│   ├── loss.png
-│   └── miou.png
-└── src  // Source code directory
-    ├── config.py
-    ├── datasets.py
-    ├── engine.py
-    ├── inference_image.py
-    ├── metrics.py
-    ├── model.py
-    ├── train.py
-    └── utils.py 
+![Project directory structure](<Images/Directory structure.jpg>)
 
 ### Analyzing the Graphs ###
 The following are the loss, accuracy, and mean IoU graphs.
 ![Accuracy graphs after training on the Penn-Fudan dataset.](codes/outputs/inference_results/accuracy.png)
-Figure 3. Accuracy graphs after training on the Penn-Fudan dataset.
+
 
 ![Mean IoU graphs after training on the Penn-Fudan Pedestrian segmentation dataset.](codes/outputs/inference_results/miou.png)
-Figure 4. Mean IoU graphs after training on the Penn-Fudan Pedestrian segmentation dataset.
+
 
 ![Loss graphs after training the UNet model from scratch](codes/outputs/inference_results/loss.png)
-Figure 5. Loss graphs after training the UNet model from scratch.
+
 
 Here we can observe that the plots for the validation accuracy and mean IoU also follow a similar trend. They both almost keep on improving till the end.
 
